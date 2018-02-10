@@ -42,6 +42,6 @@ The name explains these. These can be for either fun or profit. Only non-profit 
 
 ## Reviews and Freelancing profiles
 It's usually a good idea to a get a 3rd parties opinion on someone before judging them. For that reason you can find most of my online profiles (or at least those that have reviews/feedback from customers).
- - Fiverr - both freelance development and programming tutoring (note that certain items are unlisted because I can't keep up with demand).
- - Chegg - entirely tutoring and lessons.
- - CodeWars.
+ - [Fiverr](https://www.fiverr.com/users/matthew_zar/) - both freelance development and programming tutoring (note that certain items are unlisted because I can't keep up with demand).
+ - [Chegg](https://www.chegg.com/tutors/online-tutors/Matthew-F-05446/) - entirely tutoring and lessons.
+ - [CodeWars](https://www.codewars.com/users/Anarki).
