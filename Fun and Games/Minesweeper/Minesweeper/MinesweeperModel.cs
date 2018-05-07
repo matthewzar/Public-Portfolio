@@ -33,12 +33,12 @@ namespace Minesweeper
         /// <summary>
         /// The true layout of the board, hidden to the player 
         /// </summary>
-        private TrueCellState[,] solution;
+        public TrueCellState[,] solution;
 
         /// <summary>
         /// What is being shown to the player
         /// </summary>
-        private DisplayedCellState[,] currentDisplay;
+        public DisplayedCellState[,] currentDisplay;
 
         private Random rng = new Random();
 

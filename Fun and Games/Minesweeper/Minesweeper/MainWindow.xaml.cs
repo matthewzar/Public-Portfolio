@@ -24,7 +24,7 @@ namespace Minesweeper
         {
             InitializeComponent();
 
-            var temp = new MinesweeperModel(12, 10, 2);
+            var temp = new MinesweeperModel(12, 10, 20);
             Console.WriteLine(temp.ToString());
 
             temp.RevealCell(0, 0);
