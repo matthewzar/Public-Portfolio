@@ -45,40 +45,51 @@ namespace Minesweeper
 
         private readonly Random rng = new Random();
 
-        public int TotalMines { private get; set; }
-        public bool GameOver { private get; set; }
+        public int TotalMines { get; private set; }
+        public bool GameOver { get; private set; }
+
+        public int Columns { get; private set; }
+        public int Rows { get; private set; }
+
+        private bool OpeningMoveMade;
 
         public MinesweeperModel(int rowCount, int columnCount, int totalMines)
         {
-            StartNewGame(rowCount, columnCount, totalMines);
+            if (rowCount * columnCount <= totalMines) throw new ArgumentException($"Cannot fit {totalMines} (and an opening click space) in {rowCount * columnCount} spaces");
+
+            TotalMines = totalMines;
+            Columns = rowCount;
+            Rows = columnCount;
+            ResetGame();
         }
 
         /// <summary>
-        /// Resets the model to a new game state.
+        /// Tell the model to start a new game of the same difficulty.
         /// </summary>
-        /// <param name="rowCount"></param>
-        /// <param name="columnCount"></param>
-        /// <param name="totalMines"></param>
-        public void StartNewGame(int rowCount, int columnCount, int totalMines)
+        public void ResetGame()
         {
-            if (rowCount * columnCount < totalMines) throw new ArgumentException($"Cannot fit {totalMines} in {rowCount * columnCount} spaces");
+            OpeningMoveMade = false;
+            InitialiseEmptyGrid();
+        }
 
-            TotalMines = totalMines;
+        private void PopulateGameGrids(int openingRow, int openingCol)
+        {
+            OpeningMoveMade = true;
             GameOver = false;
-            InitialiseEmptyGrid(rowCount, columnCount);
-            PopulateGrid();
+            InitialiseEmptyGrid();
+            PopulateGrid(openingRow, openingCol);
             CountNeighbors();
         }
 
-        private void InitialiseEmptyGrid(int rowCount, int columnCount)
+        private void InitialiseEmptyGrid()
         {
-            neighboringMineCounts = new int[rowCount, columnCount];
-            solution = new TrueCellState[rowCount, columnCount];
-            currentDisplay = new DisplayedCellState[rowCount, columnCount];
+            neighboringMineCounts = new int[Rows, Columns];
+            solution = new TrueCellState[Rows, Columns];
+            currentDisplay = new DisplayedCellState[Rows, Columns];
 
-            for (int i = 0; i < solution.GetLength(0); i++)
+            for (int i = 0; i < Rows; i++)
             {
-                for (int j = 0; j < solution.GetLength(1); j++)
+                for (int j = 0; j < Columns; j++)
                 {
                     solution[i, j] = TrueCellState.empty;
                     currentDisplay[i, j] = DisplayedCellState.untouched;
@@ -86,14 +97,18 @@ namespace Minesweeper
             }
         }
 
-        private void PopulateGrid()
+        private void PopulateGrid(int openingRow, int openingCol)
         {
             int addedMines = 0;
             while (addedMines < TotalMines)
             {
-                int row = rng.Next(solution.GetLength(0));
-                int col = rng.Next(solution.GetLength(1));
-                if(solution[row,col] == TrueCellState.mine) continue;
+                int row = rng.Next(Rows);
+                int col = rng.Next(Columns);
+
+                //Is it an already used space, or one that will kill the player on their first move?
+                if(solution[row,col] == TrueCellState.mine ||
+                   row == openingRow && col == openingCol) continue;
+
                 solution[row, col] = TrueCellState.mine;
                 addedMines++;
             }
@@ -101,9 +116,9 @@ namespace Minesweeper
 
         private void CountNeighbors()
         {
-            for (int i = 0; i < solution.GetLength(0); i++)
+            for (var i = 0; i < Rows; i++)
             {
-                for (int j = 0; j < solution.GetLength(1); j++)
+                for (var j = 0; j < Columns; j++)
                 {
                     neighboringMineCounts[i,j] = CountSingleCellsNeighbors(i, j);
                 }
@@ -124,11 +139,11 @@ namespace Minesweeper
 
         private IEnumerable<Tuple<int, int>> GetLegalCellNeighbors(int row, int col)
         {
-            int rowBound = row == solution.GetLength(0) - 1 ? 0 : 1;
-            int colBound = col == solution.GetLength(1) - 1 ? 0 : 1;
-            for (int i = row == 0 ? 0 : -1; i <= rowBound; i++)
+            int rowBound = row == Rows - 1 ? 0 : 1;
+            int colBound = col == Columns - 1 ? 0 : 1;
+            for (var i = row == 0 ? 0 : -1; i <= rowBound; i++)
             {
-                for (int j = col == 0 ? 0 : -1; j <= colBound; j++)
+                for (var j = col == 0 ? 0 : -1; j <= colBound; j++)
                 {
                     if (i == 0 && j == 0) continue;
                     yield return new Tuple<int, int>(row+i, col+j);
@@ -136,8 +151,17 @@ namespace Minesweeper
             }
         }
 
+        /// <summary>
+        /// Get the result of revealing a cell. Note that if this is the first move of a game, the layout
+        /// will be created here (a tiny delay may occur, but only for HUGE games).
+        /// </summary>
+        /// <param name="row"></param>
+        /// <param name="col"></param>
+        /// <returns></returns>
         public DisplayedCellState RevealCell(int row, int col)
         {
+            if (!OpeningMoveMade) PopulateGameGrids(row, col);
+
             if (GameOver || currentDisplay[row, col] != DisplayedCellState.untouched) return currentDisplay[row, col];
 
             if (solution[row, col] == TrueCellState.mine)
@@ -161,7 +185,7 @@ namespace Minesweeper
         /// <returns>Returns true if the cell was in a changable state</returns>
         public bool ToggleCellFlagType(int row, int col)
         {
-            if (GameOver) return false;
+            if (GameOver || !OpeningMoveMade) return false;
 
             var transitions = new Dictionary<DisplayedCellState, DisplayedCellState>
             {

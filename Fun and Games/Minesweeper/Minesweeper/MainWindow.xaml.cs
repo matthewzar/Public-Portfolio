@@ -24,21 +24,22 @@ namespace Minesweeper
         {
             InitializeComponent();
 
-            var temp = new MinesweeperModel(12, 10, 20);
+            var temp = new MinesweeperModel(12, 10, 50);
             Console.WriteLine(temp.ToString());
 
-            temp.RevealCell(0, 0);
+            temp.ToggleCellFlagType(0, 0);
+            temp.ToggleCellFlagType(0, 0);
+            temp.RevealCell(0, 1);
             Console.WriteLine();
             Console.WriteLine(temp.ToString());
 
-            temp.RevealCell(1, 1);
-            Console.WriteLine();
-            Console.WriteLine(temp.ToString());
+            for (int i = 1; i < 5; i++)
+            {
+                temp.RevealCell(i, i);
+                Console.WriteLine();
+                Console.WriteLine(temp.ToString());
 
-
-            temp.RevealCell(2, 2);
-            Console.WriteLine();
-            Console.WriteLine(temp.ToString());
+            }
         }
     }
 }
