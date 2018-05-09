@@ -20,25 +20,53 @@ namespace Minesweeper
     /// </summary>
     public partial class MainWindow : Window
     {
+        const int ROWS = 6;
+        const int COLS = 8;
+
+        private MinesweeperModel gameModel = new MinesweeperModel(ROWS, COLS, 10);
+
         public MainWindow()
         {
             InitializeComponent();
 
-            var temp = new MinesweeperModel(12, 10, 50);
-            Console.WriteLine(temp.ToString());
-
-            temp.ToggleCellFlagType(0, 0);
-            temp.ToggleCellFlagType(0, 0);
-            temp.RevealCell(0, 1);
-            Console.WriteLine();
-            Console.WriteLine(temp.ToString());
-
-            for (int i = 1; i < 5; i++)
+            for (int col = 0; col < gameModel.Columns; col++)
             {
-                temp.RevealCell(i, i);
-                Console.WriteLine();
-                Console.WriteLine(temp.ToString());
+                var stk = new StackPanel();
+                stk.Orientation = Orientation.Horizontal;
+                StackOfRows.Children.Add(stk);
+                for (int row = 0; row < gameModel.Rows; row++)
+                {
+                    var btn = new Button
+                    {
+                        Content = "-",
+                        Width = 40,
+                        Height = 40
+                    };
+                    var closureRow = row;
+                    var closureCol = col;
+                    //add a check for right/left click, and link to flagging behaviour
+                    btn.Click += (sender, e) => { updateDisplay(closureRow, closureCol); };
+                    stk.Children.Add(btn);
+                }
+            }
+        }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+        }
+
+        private void updateDisplay(int click_row, int click_col)
+        {
+            gameModel.RevealCell(click_row, click_col);
+
+            for (int col = 0; col < gameModel.Columns; col++)
+            {
+                var currentRow = (StackPanel) StackOfRows.Children[col];
+                for (int row = 0; row < gameModel.Rows; row++)
+                {
+                    var btn = (Button) currentRow.Children[row];
+                    btn.Content = gameModel.GetUserFriendlyCellState(row, col);
+                }
             }
         }
     }

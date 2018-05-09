@@ -12,7 +12,7 @@ namespace Minesweeper
     {
         untouched = '-',
         unsure = '?',
-        exposed = '_',
+        exposed = ' ',
         flagged = 'F',
         exploded = 'E',
         incorrectFlag = 'I',
@@ -229,6 +229,13 @@ namespace Minesweeper
         public DisplayedCellState GetCellState(int row, int col)
         {
             return currentDisplay[row, col];
+        }
+
+        public char GetUserFriendlyCellState(int row, int col)
+        {
+            if (currentDisplay[row, col] == DisplayedCellState.exposed)
+                return neighboringMineCounts[row, col] == 0 ? ' ' : neighboringMineCounts[row, col].ToString()[0];
+            return (char)currentDisplay[row, col];
         }
 
         private void ExposeLinkedZeroNeighbors(int row, int col)
