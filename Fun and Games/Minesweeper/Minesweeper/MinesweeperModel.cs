@@ -4,16 +4,19 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 
 namespace Minesweeper
 {
     public enum DisplayedCellState
     {
-        untouched = 'O',
-        unkown = '?',
-        exposed = 'E',
-        flagged = '!',
-        exploded = 'X'
+        untouched = '-',
+        unsure = '?',
+        exposed = '_',
+        flagged = 'F',
+        exploded = 'E',
+        incorrectFlag = 'I',
+        unexplodedMine = 'M'
     }
 
     public enum TrueCellState
@@ -33,22 +36,35 @@ namespace Minesweeper
         /// <summary>
         /// The true layout of the board, hidden to the player 
         /// </summary>
-        public TrueCellState[,] solution;
+        private TrueCellState[,] solution;
 
         /// <summary>
         /// What is being shown to the player
         /// </summary>
-        public DisplayedCellState[,] currentDisplay;
+        private DisplayedCellState[,] currentDisplay;
 
-        private Random rng = new Random();
+        private readonly Random rng = new Random();
 
         public int TotalMines { private get; set; }
+        public bool GameOver { private get; set; }
 
         public MinesweeperModel(int rowCount, int columnCount, int totalMines)
         {
-            if(rowCount * columnCount < totalMines) throw new ArgumentException($"Cannot fit {totalMines} in {rowCount * columnCount} spaces");
+            StartNewGame(rowCount, columnCount, totalMines);
+        }
+
+        /// <summary>
+        /// Resets the model to a new game state.
+        /// </summary>
+        /// <param name="rowCount"></param>
+        /// <param name="columnCount"></param>
+        /// <param name="totalMines"></param>
+        public void StartNewGame(int rowCount, int columnCount, int totalMines)
+        {
+            if (rowCount * columnCount < totalMines) throw new ArgumentException($"Cannot fit {totalMines} in {rowCount * columnCount} spaces");
 
             TotalMines = totalMines;
+            GameOver = false;
             InitialiseEmptyGrid(rowCount, columnCount);
             PopulateGrid();
             CountNeighbors();
@@ -122,17 +138,73 @@ namespace Minesweeper
 
         public DisplayedCellState RevealCell(int row, int col)
         {
-            if (currentDisplay[row, col] != DisplayedCellState.untouched) return currentDisplay[row, col];
+            if (GameOver || currentDisplay[row, col] != DisplayedCellState.untouched) return currentDisplay[row, col];
 
             if (solution[row, col] == TrueCellState.mine)
             {
                 currentDisplay[row, col] = DisplayedCellState.exploded;
+                GameOver = true;
+                ExposeExplodedBoard();
                 return DisplayedCellState.exploded;
             }
 
             currentDisplay[row, col] = DisplayedCellState.exposed;
             ExposeLinkedZeroNeighbors(row, col);
             return DisplayedCellState.exposed;
+        }
+
+        /// <summary>
+        /// Toggles an unexposed cell between: unexposed, flagged, and unsure (in that order)
+        /// </summary>
+        /// <param name="row"></param>
+        /// <param name="col"></param>
+        /// <returns>Returns true if the cell was in a changable state</returns>
+        public bool ToggleCellFlagType(int row, int col)
+        {
+            if (GameOver) return false;
+
+            var transitions = new Dictionary<DisplayedCellState, DisplayedCellState>
+            {
+                {DisplayedCellState.untouched, DisplayedCellState.flagged},
+                {DisplayedCellState.flagged, DisplayedCellState.unsure},
+                {DisplayedCellState.unsure, DisplayedCellState.untouched},
+            };
+            var startState = currentDisplay[row, col];
+            if (transitions.ContainsKey(startState))
+            {
+                currentDisplay[row, col] = transitions[startState];
+                return true;
+            }
+
+            return false;
+        }
+
+        private void ExposeExplodedBoard()
+        {
+            for (int i = 0; i < currentDisplay.GetLength(0); i++)
+            {
+                for (int j = 0; j < currentDisplay.GetLength(1); j++)
+                {
+                    var cellShows = currentDisplay[i, j];
+                    var cellSolution = solution[i, j];
+                    if (cellSolution == TrueCellState.mine)
+                    {
+                        if (cellShows == DisplayedCellState.unsure ||
+                            cellShows == DisplayedCellState.untouched)
+                            currentDisplay[i, j] = DisplayedCellState.unexplodedMine;
+                    }
+                    else
+                    {
+                        if (cellShows == DisplayedCellState.flagged)
+                            currentDisplay[i, j] = DisplayedCellState.incorrectFlag;
+                    }
+                }
+            }
+        }
+
+        public DisplayedCellState GetCellState(int row, int col)
+        {
+            return currentDisplay[row, col];
         }
 
         private void ExposeLinkedZeroNeighbors(int row, int col)
