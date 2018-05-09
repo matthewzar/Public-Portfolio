@@ -12,11 +12,12 @@ namespace Minesweeper
     {
         untouched = '-',
         unsure = '?',
-        exposed = ' ',
-        flagged = 'F',
-        exploded = 'E',
-        incorrectFlag = 'I',
-        unexplodedMine = 'M'
+        exposed = ' ', //□
+        flagged = 'F', //⚑
+        exploded = 'E', //✹
+        incorrectFlag = 'I', //❌
+        unexplodedMine = 'M' //💣
+        //The single-char unicode images would be nice, but don't show up universally
     }
 
     public enum TrueCellState
