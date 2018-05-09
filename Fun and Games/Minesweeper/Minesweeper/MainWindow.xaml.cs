@@ -45,26 +45,40 @@ namespace Minesweeper
                     var closureRow = row;
                     var closureCol = col;
                     //add a check for right/left click, and link to flagging behaviour
-                    btn.Click += (sender, e) => { updateDisplay(closureRow, closureCol); };
+                    btn.MouseUp += (sender, e) =>
+                    {
+                        if (e.ChangedButton == MouseButton.Right)
+                            flagCell(closureRow, closureCol);
+                    };
+                    btn.Click += (sender, e) =>
+                    {
+                        updateDisplay(closureRow, closureCol);
+                    };
                     stk.Children.Add(btn);
                 }
             }
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-        }
-
         private void updateDisplay(int click_row, int click_col)
         {
             gameModel.RevealCell(click_row, click_col);
+            redrawGrid();
+        }
 
+        private void flagCell(int click_row, int click_col)
+        {
+            gameModel.ToggleCellFlagType(click_row, click_col);
+            redrawGrid();
+        }
+
+        private void redrawGrid()
+        {
             for (int col = 0; col < gameModel.Columns; col++)
             {
-                var currentRow = (StackPanel) StackOfRows.Children[col];
+                var currentRow = (StackPanel)StackOfRows.Children[col];
                 for (int row = 0; row < gameModel.Rows; row++)
                 {
-                    var btn = (Button) currentRow.Children[row];
+                    var btn = (Button)currentRow.Children[row];
                     btn.Content = gameModel.GetUserFriendlyCellState(row, col);
                 }
             }
