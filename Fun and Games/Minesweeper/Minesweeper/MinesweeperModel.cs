@@ -25,6 +25,14 @@ namespace Minesweeper
         empty,
     }
 
+    public enum GameState
+    {
+        NotStarted,
+        Started,
+        Win,
+        Loss
+    }
+
     public class MinesweeperModel
     {
         /// <summary>
@@ -43,15 +51,14 @@ namespace Minesweeper
         /// </summary>
         private DisplayedCellState[,] currentDisplay;
 
+        public GameState CurrentState { get; private set; }
+
         private readonly Random rng = new Random();
 
         public int TotalMines { get; private set; }
-        public bool GameOver { get; private set; }
-
+        
         public int Columns { get; private set; }
         public int Rows { get; private set; }
-
-        private bool OpeningMoveMade;
 
         public MinesweeperModel(int rowCount, int columnCount, int totalMines)
         {
@@ -68,14 +75,13 @@ namespace Minesweeper
         /// </summary>
         public void ResetGame()
         {
-            OpeningMoveMade = false;
+            CurrentState = GameState.NotStarted;
             InitialiseEmptyGrid();
         }
 
         private void PopulateGameGrids(int openingRow, int openingCol)
         {
-            OpeningMoveMade = true;
-            GameOver = false;
+            CurrentState = GameState.Started;
             InitialiseEmptyGrid();
             PopulateGrid(openingRow, openingCol);
             CountNeighbors();
@@ -160,16 +166,23 @@ namespace Minesweeper
         /// <returns></returns>
         public DisplayedCellState RevealCell(int row, int col)
         {
-            if (!OpeningMoveMade) PopulateGameGrids(row, col);
+            if (CurrentState == GameState.NotStarted) PopulateGameGrids(row, col);
 
-            if (GameOver || currentDisplay[row, col] != DisplayedCellState.untouched) return currentDisplay[row, col];
+            //Can't get here in a notStarted state
+            //Check if we are either in an end-game state or clicked a revealed cell
+            if (CurrentState != GameState.Started || currentDisplay[row, col] != DisplayedCellState.untouched) return currentDisplay[row, col];
 
             if (solution[row, col] == TrueCellState.mine)
             {
                 currentDisplay[row, col] = DisplayedCellState.exploded;
-                GameOver = true;
+                CurrentState = GameState.Loss;
                 ExposeExplodedBoard();
                 return DisplayedCellState.exploded;
+            }
+            else
+            {
+                //TODO - add a check for (total remaining unrevealable cells + the placed flags) == TotalMines
+                //TODO - if true, set the CurrentState to win
             }
 
             currentDisplay[row, col] = DisplayedCellState.exposed;
@@ -185,7 +198,7 @@ namespace Minesweeper
         /// <returns>Returns true if the cell was in a changable state</returns>
         public bool ToggleCellFlagType(int row, int col)
         {
-            if (GameOver || !OpeningMoveMade) return false;
+            if (CurrentState != GameState.Started) return false;
 
             var transitions = new Dictionary<DisplayedCellState, DisplayedCellState>
             {
