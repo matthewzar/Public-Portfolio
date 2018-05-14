@@ -48,30 +48,30 @@ namespace Minesweeper
                     btn.MouseUp += (sender, e) =>
                     {
                         if (e.ChangedButton == MouseButton.Right)
-                            flagCell(closureRow, closureCol);
+                            FlagCell(closureRow, closureCol);
                     };
                     btn.Click += (sender, e) =>
                     {
-                        updateDisplay(closureRow, closureCol);
+                        UpdateDisplay(closureRow, closureCol);
                     };
                     stk.Children.Add(btn);
                 }
             }
         }
 
-        private void updateDisplay(int click_row, int click_col)
+        private void UpdateDisplay(int click_row, int click_col)
         {
             gameModel.RevealCell(click_row, click_col);
-            redrawGrid();
+            RedrawGrid();
         }
 
-        private void flagCell(int click_row, int click_col)
+        private void FlagCell(int click_row, int click_col)
         {
             gameModel.ToggleCellFlagType(click_row, click_col);
-            redrawGrid();
+            RedrawGrid();
         }
 
-        private void redrawGrid()
+        private void RedrawGrid()
         {
             for (int col = 0; col < gameModel.Columns; col++)
             {
@@ -82,6 +82,12 @@ namespace Minesweeper
                     btn.Content = gameModel.GetUserFriendlyCellState(row, col);
                 }
             }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            gameModel.ResetGame();
+            RedrawGrid();
         }
     }
 }

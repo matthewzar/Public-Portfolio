@@ -13,9 +13,9 @@ namespace Minesweeper
         untouched = '-',
         unsure = '?',
         exposed = ' ', //□
-        flagged = 'F', //⚑
-        exploded = 'E', //✹
-        incorrectFlag = 'I', //❌
+        flagged = '⚑', //⚑
+        exploded = '✹', //✹
+        incorrectFlag = '❌', //❌
         unexplodedMine = 'M' //💣
         //The single-char unicode images would be nice, but don't show up universally
     }
