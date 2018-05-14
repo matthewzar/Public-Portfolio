@@ -1,3 +1,4 @@
+
 # Public-Portfolio
 
 ## Overview
@@ -11,9 +12,10 @@ Here are some examples of what will eventually belong here:
  - [Project Euler](https://projecteuler.net/) solutions
  - Small demonstrable project from Fiverr
  - Hackathon-style programs. Generally written fast and for fun.
-   - Checkers
-   - Bingo
-   - Sudoku
+	 - [Minesweeper](Fun-And-Games/Minesweeper/README.md) 
+	 - Checkers
+	 - Bingo
+	 - Sudoku
  
 ## Team Projects
 Work done with a full-time production team. Generally these works are protected and will therefore only contain publicly-available screenshots and descriptions.
