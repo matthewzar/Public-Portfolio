@@ -12,7 +12,7 @@ Here are some examples of what will eventually belong here:
  - [Project Euler](https://projecteuler.net/) solutions
   - Hackathon-style programs. Generally written fast and for fun.
 	 - [Minesweeper](Fun-And-Games/Minesweeper/README.md) 
-	 - [Checkers] (Fun-And-Games/Checkers/README.md) 
+	 - [Checkers](Fun-And-Games/Checkers/README.md) 
 	 - Bingo
 	 - Sudoku
  
