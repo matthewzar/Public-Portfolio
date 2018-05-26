@@ -1,11 +1,11 @@
 # Minesweeper
 
-| Attribute     |       |   |   |   |
-|--------------|---------|---|---|---|
-| Language   | C#     |   |   |   |
-| UI Types   | WPF, Console     |   |   |   |
-| Architecture | MVC     |   |   |   |
-| Time         | 2 Hours |   |   |   |
+| Attribute     | Value   |
+|--------------|---------|
+| Language   | C#     |
+| UI Types   | WPF, Console     |
+| Architecture | MVC     |
+| Time         | 2 Hours |
 
 This 2 hour project was meant as a fun MVC design exercise. The final product is a working Minesweeper game, with good separation of concerns. 
 
