@@ -1,9 +1,10 @@
 # Public Programming Portfolio
+Please note that this a work in progress, living document, and is subject to daily change.
 
 ## Overview
 This repo is a means to showcase past work. Including everything from personal-repo-cross-references, to screenshots and descriptions of less public works.
 
-Most of the more polished (private) content here can be found listed on [Code Commissions](www.codecommissions.com).
+Most of the more polished (private) content here will be available to purchase on [Code Commissions](www.codecommissions.com), and 3rd party sites. In those cases, external links and screenshots will be provided.
 
 ## Mini Projects
 Mini projects are typically programs made for fun, or to learn/practice a very specific concept. Some entries are basically programming exercises from websites, others are more independent.
