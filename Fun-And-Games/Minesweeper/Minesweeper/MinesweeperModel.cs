@@ -180,16 +180,34 @@ namespace Minesweeper
                 ExposeExplodedBoard();
                 return DisplayedCellState.exploded;
             }
-            else
-            {
-                //TODO - add a check for (total remaining unrevealable cells + the placed flags) == TotalMines
-                //TODO - if true, set the CurrentState to win
-            }
-
+            
+            checkForWin();
             currentDisplay[row, col] = DisplayedCellState.exposed;
             ExposeLinkedZeroNeighbors(row, col);
             return DisplayedCellState.exposed;
         }
+
+        private void checkForWin()
+        {
+            bool win = true;
+            for (int i = 0; i < currentDisplay.GetLength(0); i++)
+            {
+                for (int j = 0; j < currentDisplay.GetLength(1); j++)
+                {
+                    if (solution[i, j] == TrueCellState.mine && currentDisplay[i, j] != DisplayedCellState.flagged ||
+                        solution[i, j] == TrueCellState.empty && currentDisplay[i, j] == DisplayedCellState.flagged)
+                    {
+                        win = false;
+                        goto LOOP_END;
+                    }
+                }
+            }
+            LOOP_END:
+
+            if (win)
+                CurrentState = GameState.Win;
+        }
+
 
         /// <summary>
         /// Toggles an unexposed cell between: unexposed, flagged, and unsure (in that order)
@@ -211,6 +229,7 @@ namespace Minesweeper
             if (transitions.ContainsKey(startState))
             {
                 currentDisplay[row, col] = transitions[startState];
+                checkForWin();
                 return true;
             }
 

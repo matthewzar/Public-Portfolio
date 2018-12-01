@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -49,6 +50,7 @@ namespace Minesweeper
                     {
                         if (e.ChangedButton == MouseButton.Right)
                             FlagCell(closureRow, closureCol);
+                        displayWinMessageIfWin();
                     };
                     btn.Click += (sender, e) =>
                     {
@@ -63,6 +65,17 @@ namespace Minesweeper
         {
             gameModel.RevealCell(click_row, click_col);
             RedrawGrid();
+            displayWinMessageIfWin();
+        }
+
+        private void displayWinMessageIfWin()
+        {
+            if (gameModel.CurrentState == GameState.Win)
+            {
+                MessageBox.Show("Congratulations, you win!\nPress OK to reset.", "Winner");
+                gameModel.ResetGame();
+                RedrawGrid();
+            }
         }
 
         private void FlagCell(int click_row, int click_col)
@@ -84,7 +97,7 @@ namespace Minesweeper
             }
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void ResetGame_ButtoClick(object sender, RoutedEventArgs e)
         {
             gameModel.ResetGame();
             RedrawGrid();

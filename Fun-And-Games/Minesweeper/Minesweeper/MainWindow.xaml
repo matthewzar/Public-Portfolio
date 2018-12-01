@@ -9,6 +9,6 @@
     <Grid>
         <StackPanel Name="StackOfRows" HorizontalAlignment="Center" VerticalAlignment="Center">
         </StackPanel>
-        <Button Content="Reset" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="75" Click="Button_Click"/>
+        <Button Content="Reset" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="75" Click="ResetGame_ButtoClick"/>
     </Grid>
 </Window>
