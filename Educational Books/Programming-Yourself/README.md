@@ -8,4 +8,4 @@ The premise behind this process is that you have to have a deep understand of a 
 
 Currently being written. Work started November 2018. **Estimated** completion date March 2018.
 
-Bare in mind that the [sample front page|SampleFrontPage.pdf] is in draft form.
+Bare in mind that the [sample front page](SampleFrontPage.pdf) is in draft form.
