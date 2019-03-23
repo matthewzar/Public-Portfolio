@@ -2,9 +2,9 @@
 Please note that this a work in progress, living document, and is subject to daily change.
 
 ## Overview
-This repo is a means to showcase past work. Including everything from personal-repo-cross-references, to screenshots and descriptions of less public works.
+This repo is an informal showcase of past work. Including everything from personal-repo-cross-references, to screenshots and descriptions of less public works.
 
-Most of the more polished (private) content here will be available to purchase on [Code Commissions](www.codecommissions.com), and 3rd party sites. In those cases, external links and screenshots will be provided.
+Most of the education-focused material shown here will be available to purchase on [Code Commissions](www.codecommissions.com). In those cases, external links and screenshots will be provided.
 
 ## Mini Projects
 Mini projects are typically programs made for fun, or to learn/practice a very specific concept. Some entries are basically programming exercises from websites, others are more independent.
@@ -38,7 +38,10 @@ These are videos/demos/courses/eBooks I've made for teaching programming at vari
  - Lynda
  - Smashwords 
  
-The size and availability of these vary drastically depending on the style and source material being covered.  
+The size and availability of these vary drastically depending on the style and source material being covered.
+
+### Lesson Source Code
+For any eductional material that uses source code, you'll be able to find the content in our [Lesson Code Repo](https://github.com/matthewzar/code-commissions-lesson-code).
  
 ## Large Personal Projects
 These are for fun and/or profit. Profit-oriented project will have descriptions, but only non-profit projects will have source code listed. You can typically distinguish between large-projects and mini-project by whether or not there is an associated installer (or usage documentation).
