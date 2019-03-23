@@ -4,7 +4,7 @@ Please note that this a work in progress, living document, and is subject to dai
 ## Overview
 This repo is an informal showcase of past work. Including everything from personal-repo-cross-references, to screenshots and descriptions of less public works.
 
-Most of the education-focused material shown here will be available to purchase on [Code Commissions](www.codecommissions.com). In those cases, external links and screenshots will be provided.
+Most of the education-focused material shown here will be available to purchase on [Code Commissions](https://www.codecommissions.com). In those cases, external links and screenshots will be provided.
 
 ## Mini Projects
 Mini projects are typically programs made for fun, or to learn/practice a very specific concept. Some entries are basically programming exercises from websites, others are more independent.
