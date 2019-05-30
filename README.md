@@ -13,6 +13,7 @@ These are videos/demos/courses/eBooks I've made for teaching programming, and ot
  - SkillShare
  	- [Python Mini-Projects - a Maths Quiz Game](https://skl.sh/2vgU7Y7)
  	- [Python Essentials: Password Generator](https://skl.sh/2TDL5eL)
+	- [Python Essentials: Card Deck Class in 3 Steps](https://skl.sh/2OWSFjM)
  - Udemy
  - PluralSight
  - Safari Books Online
