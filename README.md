@@ -1,5 +1,5 @@
 # Public Programming Portfolio
-Please note that this a work in progress, living document, and is subject to continuous change. Any blank or under-explained sections are there as content reminders - sorry about that, I'll do housekeeping before sending this to any recruiters.
+Please note that this a work in progress, living document, and is subject to continuous change. Any blank or under-explained will be updated as time permits.
 
 ## Overview
 This repo is an informal showcase of past work. Including everything from personal-repo-cross-references, to screenshots and descriptions of less public works.
@@ -13,12 +13,13 @@ These are videos/demos/courses/eBooks I've made that teach programming, and othe
  - SkillShare
  	- [Python Mini-Projects - a Maths Quiz Game](https://skl.sh/2vgU7Y7)
  	- [Python Essentials: Password Generator](https://skl.sh/2TDL5eL)
-	- [Python Essentials: Card Deck Class in 3 Steps](https://skl.sh/2OWSFjM)
+	- [Python Essentials: Card Deck Class in 3 Steps](https://skl.sh/2OWSFjM) 
+ - [Quora Questions](https://www.quora.com/profile/Matthew-Funcke/) - not technically a course, but somewhere that I can practice answering both technical and non-technical questions - hopefully offering insight to other developers.
  - Udemy
- - PluralSight
  - Safari Books Online
  - Lynda
  - Smashwords 
+	- [Sudoku Sage: 366 Apprentice Puzzles](https://www.smashwords.com/books/view/428322) - a programmatically generated book of Sudoku puzzles.
  
 The size and availability of these vary drastically depending on the style and source material being covered.
 
@@ -47,22 +48,23 @@ Live video tutoring and written lessons on Python, C#, Java, and CS theory. Some
 ## Team Projects (NDA-covered IP)
 These are works done with a full-time production team. Generally, they are protected IP and will therefore only contain publicly-available screenshots and descriptions.
  - Android Game Lobby.
- 	- Think of a mobile app store, with per-company branding and theming.
+ 	- Think of a mobile app store, with per-company custom branding and theming.
  - Alchemy Games. 
 	- Alchemy was the game engine used.
  	- Delivered games include Thunderstruck, Ladies Night, Goddess of Egypt, Aztec Queen, and Spring Break. 
  - Octane Game Engine. 
  	- Creating an in-house game engine (Octane). Not unlike Construct 2 or Unreal, just more focused on casino games.
+	- My primary contribution was on the dynamic layout sub-engine - a set of relationships between UI elements that rearrange the game to fit any screen.
 
 ## Solo In-house Tools (NDA-covered IP)
 Tools created - either in my spare time or under instruction - that helped make production easier/better/faster but will not (or cannot) be made public.
- - JLog - a tiny desktop toolbar for seamless, rapid, JIRA interaction.
+ - JLog - an unobtrusive (tiny) desktop toolbar for seamless, rapid, JIRA interaction.
  - Forge - Game prototyping layout generator. Let artists experiment with how game assets would interact, without any code.
-
+  
 ## Mini Projects
 Mini projects are typically programs made for fun, or to learn/practice a very specific concept. Some entries are basically programming exercises from websites, others are more independent.
 Here are some examples of what will eventually belong here:
- - [CodeWars](https://www.codewars.com/users/Anarki) - solutions and authored Katas (the more interesting ones at least).
+ - [CodeWars](https://www.codewars.com/users/Anarki) - solutions and authored Katas.
  - [Project Euler](https://projecteuler.net/) solutions
  - Hackathon-style programs. Generally written fast and for fun.
 	 - [Minesweeper](Fun-And-Games/Minesweeper/README.md) 
@@ -72,3 +74,6 @@ Here are some examples of what will eventually belong here:
 
 ## Large Personal Projects
 These are for fun and/or profit. Profit-oriented project will have descriptions, but only non-profit projects will have source code listed. You can typically distinguish between large-projects and mini-project by whether or not there is an associated installer (or usage documentation).
+
+### [Code Commissions](https://codecommissions.com)
+This site is meant to share what I've learned about development and software engineering over the years. The site is fully functional, and most of the remaining work is not technical - it's a combination of course content creation and marketting.
