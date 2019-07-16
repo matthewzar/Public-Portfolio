@@ -1,13 +1,32 @@
-# Public Programming Portfolio
-Please note that this a work in progress, living document, and is subject to continuous change. Any blank or under-explained will be updated as time permits.
+# Developer Portfolio
+Please note that this a work in progress, living document, and is subject to continuous change. Any blank or under-explained areas will be updated as time permits.
 
 ## Overview
-This repo is an informal showcase of past work. Including everything from personal-repo-cross-references, to screenshots and descriptions of less public works.
+This repo is an informal showcase of past work and experience. Including everything from personal-repo-cross-references, to screenshots and descriptions of less public works.
 
 Most of the education-focused material shown here will be available to purchase on [Code Commissions](https://codecommissions.com/). In those cases, external links and screenshots will be provided.
 
+## Freelance dev and tutoring profiles and reviews
+We trust online reviews for products, so why not people? You can find most of my online profiles (or at least those that have reviews/feedback from customers or fellow devs) here:
+
+#### [Chegg](https://www.chegg.com/tutors/online-tutors/Matthew-F-05446/)
+Live video tutoring and written lessons on Python, C#, Java, and CS theory. Some student reviews:
+ > No words to describe Matt! He is just amazing! Every time I have issues or doubts about python, he will help me right away! 
+ 
+ > Matthew is really cool. He is patient and knows his stuff.  I would really recommend Matthew as [a] tutor.
+ 
+ > Great tutor strongly recommend his help!!!
+ 
+#### [Fiverr](https://www.fiverr.com/users/matthew_zar/)
+Both freelance development and programming tutoring (note that certain items are unlisted, or the profile is paused, because I can't always keep up with demand).
+ > Absolutely brilliant coder.. very insightful... Extremely rapid and high quality implementation of the task. Excellent communication and provided excellent documentation as well. 
+ 
+ > Perfect as always.
+ 
+ > Matthew did a great job as always. Highly recommended. Will continue to work with him.
+
 ## Educational Courses
-These are videos/demos/courses/eBooks I've made that teach programming, and other dev skills, at various levels. Some are free and available to all, others are listed commercially:
+These are videos/demos/courses/eBooks I've made that teach programming, and other developer skills, at various levels. Some are free and available to all, others are listed commercially:
  - Code Commissions
 	- [Developer Skills Colleges Forget](https://codecommissions.com/p/developer-skills-colleges-forget) - an overview of 30+ skills I believe Universities don't cover enough.
  - SkillShare
@@ -25,25 +44,6 @@ The size and availability of these vary drastically depending on the style and s
 
 #### Lesson Source Code
 For any eductional material that provides readers with source code, you'll be able to find the matching content in one of our [Code Commissions Repos](https://github.com/CodeCommissions/).
- 
-## Freelancing profiles and reviews
-We trust online reviews for products, so why not people? You can find most of my online profiles (or at least those that have reviews/feedback from customers or fellow devs) here:
-
-#### [Fiverr](https://www.fiverr.com/users/matthew_zar/)
-Both freelance development and programming tutoring (note that certain items are unlisted, or the profile is paused, because I can't always keep up with demand).
- > Absolutely brilliant coder.. very insightful... Extremely rapid and high quality implementation of the task. Excellent communication and provided excellent documentation as well. 
- 
- > Perfect as always.
- 
- > Matthew did a great job as always. Highly recommended. Will continue to work with him.
-
-#### [Chegg](https://www.chegg.com/tutors/online-tutors/Matthew-F-05446/)
-Live video tutoring and written lessons on Python, C#, Java, and CS theory. Some student reviews:
- > No words to describe Matt! He is just amazing! Every time I have issues or doubts about python, he will help me right away! 
- 
- > Matthew is really cool. He is patient and knows his stuff.  I would really recommend Matthew as [a] tutor.
- 
- > Great tutor strongly recommend his help!!!
 
 ## Team Projects (NDA-covered IP)
 These are works done with a full-time production team. Generally, they are protected IP and will therefore only contain publicly-available screenshots and descriptions.
