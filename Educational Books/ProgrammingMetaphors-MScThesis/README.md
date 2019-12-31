@@ -17,7 +17,7 @@ This paper was awarded a distinction (75% or more), and goes into a lot of detai
  - Extending the metaphors to cover more advanced programming concepts. Such as abstractions, dependency injection, or reflection. 
  - Evaluating at what level of complexity the metaphors begin to break down.
 
-## Associated code
+## [Associated code](https://github.com/matthewzar/metaphor-world-msc-thesis)
 
 As one might expect, the code associated with this project was written by a student (who has since learned **a lot** about style, architecture, CI, and design patterns). Therefore, while it can be used as inspiration, it should not be used as the foundation for a similar project. 
 
