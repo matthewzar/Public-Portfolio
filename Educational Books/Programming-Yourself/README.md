@@ -6,6 +6,6 @@ The premise behind this process is that you have to have a deep understand of a 
 
 ## Current status
 
-Currently being written. Work started November 2018. **Estimated** completion date March 2018.
+Currently being written. Work started November 2019. **Estimated** completion date April 2020.
 
 Bare in mind that the [sample front page](SampleFrontPage.pdf) is in draft form.
