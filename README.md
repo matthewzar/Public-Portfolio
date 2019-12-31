@@ -61,14 +61,16 @@ Tools created - either in my spare time or under instruction - that helped make 
  - JLog - an unobtrusive (tiny) desktop toolbar for seamless, rapid, JIRA interaction.
  - Forge - Game prototyping layout generator. Let artists experiment with how game assets would interact, without any code.
   
-## Mini Projects
-Mini projects are typically programs made for fun, or to learn/practice a very specific concept. Some entries are basically programming exercises from websites, others are more independent.
-Here are some examples of what will eventually belong here:
+## [Mini Projects](Sample%20Mini%20Projects/) and [Games](Fun-And-Games/)
+Mini projects and games are typically programs made for fun, or to learn/practice a very specific concept. They also include commissioned (public) work that presented interesting problems. 
+
+Some entries are basically programming exercises from websites, and others are more independent (such as older orders from Fiverr).
+Here are some examples of what will eventually be added here:
  - [CodeWars](https://www.codewars.com/users/Anarki) - solutions and authored Katas.
  - [Project Euler](https://projecteuler.net/) solutions
  - Hackathon-style programs. Generally written fast and for fun.
-	 - [Minesweeper](Fun-And-Games/Minesweeper/README.md) 
-	 - [Checkers](Fun-And-Games/Checkers/README.md) 
+	 - [Minesweeper](Fun-And-Games/Minesweeper/README.md) - DONE
+	 - [Checkers](Fun-And-Games/Checkers/README.md)
 	 - Bingo
 	 - Sudoku
 
