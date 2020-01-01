@@ -25,7 +25,7 @@ Both freelance development and programming tutoring (note that certain items are
  
  > Matthew did a great job as always. Highly recommended. Will continue to work with him.
 
-## Educational Courses
+## Creating Educational Content
 These are videos/demos/courses/eBooks I've made that teach programming, and other developer skills, at various levels. Some are free and available to all, others are listed commercially:
  - Code Commissions
 	- [Developer Skills Colleges Forget](https://codecommissions.com/p/developer-skills-colleges-forget) - an overview of 30+ skills I believe Universities don't cover enough.
@@ -79,3 +79,10 @@ These are for fun and/or profit. Profit-oriented project will have descriptions,
 
 ### [Code Commissions](https://codecommissions.com)
 This site is meant to share what I've learned about development and software engineering over the years. The site is fully functional, and most of the remaining work is not technical - it's a combination of course content creation and marketting.
+
+## Personal Education
+ - BSc in Computers Science and Information Systems
+ - [BSc Honours](Educational%Books/CrowdSimulation-BScThesis/) in Computer Science
+ - [MSc](Educational%Books/ProgrammingMetaphors-MScThesis/) in Computer Science
+ - Udacity Nano Degrees introducing [PyTorch](https://confirm.udacity.com/C324HNSJ) and [Tensorflow](https://confirm.udacity.com/4QURNATJ)
+
