@@ -82,7 +82,7 @@ This site is meant to share what I've learned about development and software eng
 
 ## Personal Education
  - BSc in Computers Science and Information Systems
- - [BSc Honours](Educational%Books/CrowdSimulation-BScThesis/) in Computer Science
- - [MSc](Educational%Books/ProgrammingMetaphors-MScThesis/) in Computer Science
+ - [BSc Honours](Educational%20Books/CrowdSimulation-BScThesis/) in Computer Science
+ - [MSc](Educational%20Books/ProgrammingMetaphors-MScThesis/) in Computer Science
  - Udacity Nano Degrees introducing [PyTorch](https://confirm.udacity.com/C324HNSJ) and [Tensorflow](https://confirm.udacity.com/4QURNATJ)
 
