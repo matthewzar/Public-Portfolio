@@ -7,7 +7,7 @@ This was created in under 3 hours, from scratch, to explain various concepts to 
 
 All it does is display a sudoku puzzle, and cycle through available numbers when buttons are clicked.
 
-![A finished game](../result.jpg?raw=true "Title")
+![A finished game](result.JPG "Finished Game")
 
 ## Excluded content
 
