@@ -68,11 +68,11 @@ Some entries are basically programming exercises from websites, and others are m
 Here are some examples of what will eventually be added here:
  - [CodeWars](https://www.codewars.com/users/Anarki) - solutions and authored Katas.
  - [Project Euler](https://projecteuler.net/) solutions
- - Hackathon-style programs. Generally written fast and for fun.
-	 - [Minesweeper](Fun-And-Games/Minesweeper/README.md) - DONE
+ - Hackathon-style mini programs. Generally written fast and for fun.
+	 - [Minesweeper](Fun-And-Games/Minesweeper/README.md)
 	 - [Checkers](Fun-And-Games/Checkers/README.md)
+	 - [Sudoku](Fun-And-Games/Sudoku-SimplifiedPython/README.md)
 	 - Bingo
-	 - Sudoku
 
 ## Large Personal Projects
 These are for fun and/or profit. Profit-oriented project will have descriptions, but only non-profit projects will have source code listed. You can typically distinguish between large-projects and mini-project by whether or not there is an associated installer (or usage documentation).
