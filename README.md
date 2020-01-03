@@ -1,16 +1,18 @@
 # Developer Portfolio
-Please note that this a work in progress, living document, and is subject to continuous change. Any blank or under-explained areas will be updated as time permits.
+Please note that this a work in progress, living document, and is subject to continuous change (as is the entire repo). Any blank or under-explained areas will be updated as time permits.
 
-## Overview
-This repo is an informal showcase of past work and experience. Including everything from personal-repo-cross-references, to screenshots and descriptions of less public works.
+## Repo Overview
+This repo is an informal showcase of past works. Including everything from pet projects, to screenshots and descriptions of less public works (NDAs permitting).
 
-Most of the education-focused material shown here will be available to purchase on [Code Commissions](https://codecommissions.com/). In those cases, external links and screenshots will be provided.
+Most of the education-focused material shown here will eventually be available to purchase at [Code Commissions](https://codecommissions.com/). Samples such as screenshots or intro videos, will be listed here - while the full product will linked to externally. 
 
-## Freelance dev and tutoring profiles and reviews
+## Freelancing profiles and reviews
 We trust online reviews for products, so why not people? You can find most of my online profiles (or at least those that have reviews/feedback from customers or fellow devs) here:
 
 #### [Chegg](https://www.chegg.com/tutors/online-tutors/Matthew-F-05446/)
-Live video tutoring and written lessons on Python, C#, Java, and CS theory. Some student reviews:
+Chegg offers a variety of academic services. I personally contribute to their services through video tutoring (live) and written lessons. I mostly cover Python, C#, Java, and CS theory. 
+
+Some student reviews:
  > No words to describe Matt! He is just amazing! Every time I have issues or doubts about python, he will help me right away! 
  
  > Matthew is really cool. He is patient and knows his stuff.  I would really recommend Matthew as [a] tutor.
@@ -18,7 +20,9 @@ Live video tutoring and written lessons on Python, C#, Java, and CS theory. Some
  > Great tutor strongly recommend his help!!!
  
 #### [Fiverr](https://www.fiverr.com/users/matthew_zar/)
-Both freelance development and programming tutoring (note that certain items are unlisted, or the profile is paused, because I can't always keep up with demand).
+I offer both freelance development and programming tutoring. Because I can't always keep up with demand (and existing obligations take precedent over new customers), certain services may be unlisted and/or my profile may be paused. 
+
+Some client reviews:
  > Absolutely brilliant coder.. very insightful... Extremely rapid and high quality implementation of the task. Excellent communication and provided excellent documentation as well. 
  
  > Perfect as always.
@@ -27,23 +31,21 @@ Both freelance development and programming tutoring (note that certain items are
 
 ## Creating Educational Content
 These are videos/demos/courses/eBooks I've made that teach programming, and other developer skills, at various levels. Some are free and available to all, others are listed commercially:
- - Code Commissions
+ - Code Commissions (my personal site)
 	- [Developer Skills Colleges Forget](https://codecommissions.com/p/developer-skills-colleges-forget) - an overview of 30+ skills I believe Universities don't cover enough.
  - SkillShare
  	- [Python Mini-Projects - a Maths Quiz Game](https://skl.sh/2vgU7Y7)
  	- [Python Essentials: Password Generator](https://skl.sh/2TDL5eL)
 	- [Python Essentials: Card Deck Class in 3 Steps](https://skl.sh/2OWSFjM) 
- - [Quora Questions](https://www.quora.com/profile/Matthew-Funcke/) - not technically a course, but somewhere that I can practice answering both technical and non-technical questions - hopefully offering insight to other developers.
- - Udemy
- - Safari Books Online
- - Lynda
+ - [Quora Questions](https://www.quora.com/profile/Matthew-Funcke/) - not technically a course, but somewhere that I can practice answering both technical and non-technical questions (while also, hopefully, offering insight to other developers).
  - Smashwords 
 	- [Sudoku Sage: 366 Apprentice Puzzles](https://www.smashwords.com/books/view/428322) - a programmatically generated book of Sudoku puzzles.
- 
-The size and availability of these vary drastically depending on the style and source material being covered.
+ - Udemy, Safari Books Online, and Lynda are all sites I plan to publish larger projects to in the future (such as amalgamations of related SkillShare mini-courses).
+
+The size and availability of these vary drastically depending on the style and source material being covered. Therefore, associated updates here may be far apart.
 
 #### Lesson Source Code
-For any eductional material that provides readers with source code, you'll be able to find the matching content in one of our [Code Commissions Repos](https://github.com/CodeCommissions/).
+For most educational material listed above you'll be able to find associated source code (where appropriate) in one of our [Code Commissions repos](https://github.com/CodeCommissions/).
 
 ## Team Projects (NDA-covered IP)
 These are works done with a full-time production team. Generally, they are protected IP and will therefore only contain publicly-available screenshots and descriptions.
@@ -67,7 +69,7 @@ Mini projects and games are typically programs made for fun, or to learn/practic
 Some entries are basically programming exercises from websites, and others are more independent (such as older orders from Fiverr).
 Here are some examples of what will eventually be added here:
  - [CodeWars](https://www.codewars.com/users/Anarki) - solutions and authored Katas.
- - [Project Euler](https://projecteuler.net/) solutions
+ - [Project Euler](https://projecteuler.net/) solutions.
  - Hackathon-style mini programs. Generally written fast and for fun.
 	 - [Minesweeper](Fun-And-Games/Minesweeper/README.md)
 	 - [Checkers](Fun-And-Games/Checkers/README.md)
