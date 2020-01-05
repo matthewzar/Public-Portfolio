@@ -8,15 +8,15 @@ This eBook focused sub-section covers several types of written content:
   - Commercial books will only have samples.
 - Summaries and road-maps relating to future projects.
 
-#### Crowd Simulation
+#### [Crowd Simulation](CrowdSimulation-BScThesis/)
 
-//TODO
+Compared and contrasted the applications of various existing crowd simulation techniques. Essentially a long literature review.
 
-#### Programming Metaphors
+#### [Programming Metaphors](ProgrammingMetaphors-MScThesis/)
 
-//TODO
+Exploration of how one might teach programming concepts by converting them into real-world metaphors. For example, variables as envelopes that can contain one piece of paper (i.e. their value for primitives, or an address for objects).
 
-#### Programming Yourself
+#### [Programming Yourself](Programming-Yourself/)
 
 //TODO 
 
