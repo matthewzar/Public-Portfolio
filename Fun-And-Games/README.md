@@ -1,6 +1,6 @@
 # What's here?
 
-Games and other programs I've created for fun. Usually they are created for practice purposes (such as Minesweeper for recursive 2D array traversal).
+Games and other programs I've created for fun. Usually they are created for practice purposes (such as Minesweeper for recursive 2D array traversal). Exceptionally small commissioned projects, that are unusual in some way, can also be shown here.
 
 ## Reuse Warning
 
