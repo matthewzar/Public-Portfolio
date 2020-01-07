@@ -1,7 +1,11 @@
-# What's here?
+# TurboHUD plugin
 
-Games and other programs I've created for fun. Usually they are created for practice purposes (such as Minesweeper for recursive 2D array traversal).
+This project was to extend an existing plugin (HeroIsNear.cs), so that it didn't communicate with other 3rd party tools via common methods (such as HUD or File updates).
 
-## Reuse Warning
+Specifically, the client wanted to log registry entries depending on game state. The reason for this bizarre alteration is/was that TurboHUD started blocking interactions with the file system.
 
-These projects are usually bare-bones, or POC style code. Therefore, they should not be used as the basis for style or architectural decisions in business-scale programs.
+## Testability
+
+This was an interesting product to test, as the stand-alone `.cs` file couldn't be run in isolation. In order to check it's functionality, it needed be run with TurboHUD and Diablo 3 active.
+
+To further complicate things, most registry reviewers don't auto-update their displays every second. This meant that the plugin had to be gradually built up, and tested in slices, so that no actions would overwrite/obfuscate the results. 
