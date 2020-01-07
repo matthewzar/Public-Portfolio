@@ -1,24 +1,12 @@
 # Developer Portfolio
-Please note that this a work in progress, living document, and is subject to continuous change (as is the entire repo). Any blank or under-explained areas will be updated as time permits.
+Please note that this a work in progress, living document, and is subject to continuous change (as is the entire repo). Apologies for any blank or under-explained areas, which will be updated as time permits.
 
 ## Repo Overview
-This repo is an informal showcase of past works. Including everything from pet projects, to screenshots and descriptions of less public works (NDAs permitting).
-
-Most of the education-focused material shown here will eventually be available to purchase at [Code Commissions](https://codecommissions.com/). Samples such as screenshots or intro videos, will be listed here - while the full product will linked to externally. 
+This repo is an informal showcase of past works. Including everything from pet projects, to screenshots and descriptions of less public works (NDAs and IP limitations permitting).
 
 ## Freelancing profiles and reviews
 We trust online reviews for products, so why not people? You can find most of my online profiles (or at least those that have reviews/feedback from customers or fellow devs) here:
 
-#### [Chegg](https://www.chegg.com/tutors/online-tutors/Matthew-F-05446/)
-Chegg offers a variety of academic services. I personally contribute to their services through video tutoring (live) and written lessons. I mostly cover Python, C#, Java, and CS theory. 
-
-Some student reviews:
- > No words to describe Matt! He is just amazing! Every time I have issues or doubts about python, he will help me right away! 
- 
- > Matthew is really cool. He is patient and knows his stuff.  I would really recommend Matthew as [a] tutor.
- 
- > Great tutor strongly recommend his help!!!
- 
 #### [Fiverr](https://www.fiverr.com/users/matthew_zar/)
 I offer both freelance development and programming tutoring. Because I can't always keep up with demand (and existing obligations take precedent over new customers), certain services may be unlisted and/or my profile may be paused. 
 
@@ -29,7 +17,19 @@ Some client reviews:
  
  > Matthew did a great job as always. Highly recommended. Will continue to work with him.
 
+#### [Chegg](https://www.chegg.com/tutors/online-tutors/Matthew-F-05446/)
+Chegg offers a variety of academic services. I personally contribute via both live video tutoring, and written lessons. In my experience, being able to teach a live lesson (at a moment's notice) requires both an advanced level of topical expertise, and the ability to communicate **clearly** - poor communication leads to confused students.
+
+ I mostly cover Python, C#, Java, and CS theory. Some student reviews:
+ > No words to describe Matt! He is just amazing! Every time I have issues or doubts about python, he will help me right away! 
+ 
+ > Matthew is really cool. He is patient and knows his stuff.  I would really recommend Matthew as [a] tutor.
+ 
+ > Great tutor strongly recommend his help!!!
+
 ## Creating Educational Content
+Most of the education-focused material shown here will eventually be available to purchase at [Code Commissions](https://codecommissions.com/). Samples such as screenshots or intro videos, will be listed here - while the full product will linked to externally. 
+
 These are videos/demos/courses/eBooks I've made that teach programming, and other developer skills, at various levels. Some are free and available to all, others are listed commercially:
  - Code Commissions (my personal site)
 	- [Developer Skills Colleges Forget](https://codecommissions.com/p/developer-skills-colleges-forget) - an overview of 30+ skills I believe Universities don't cover enough.
