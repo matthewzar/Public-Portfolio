@@ -16,11 +16,11 @@ Compared and contrasted the applications of various existing crowd simulation te
 
 Exploration of how one might teach programming concepts by converting them into real-world metaphors. For example, variables as envelopes that can contain one piece of paper (i.e. their value for primitives, or an address for objects).
 
-A key concept from this paper was the idea of a conceptual hierarchy. For a student to *truly* understand an idea, they could have to understand all the preceding concepts:
+A key concept from this paper was the idea of a conceptual hierarchy. For a student to *truly* understand an idea, they could have to understand all the preceding concepts. Take the following diagram with a pinch of salt, it is for illustrative purposes only (for example, it excludes certain beginner concepts like expressions, and makes arrays and flow-of-control structures appear equally complex):
 
-![Dependency hierarchy for beginner-level concepts.](ConceptualDependencyGraph.png "Conceptual Dependency Diagram")
+![Dependency hierarchy for beginner-level concepts.](ConceptualDependencyGraph.png "A potential conceptual-dependency diagram to suggest the order that programming topics should be taught in.")
 
-The reason this hierarchy was a key idea is simple: by ensuring our metaphors accurately portrayed fundamental concepts (such as Scope and Types), students would be less likely to form a misconception later.
+The reason such a hierarchy was a key idea is simple: by ensuring our metaphors accurately portrayed fundamental concepts (such as Scope and Types), students would be less likely to form a misconception later.
 
 #### [Programming Yourself](Programming-Yourself/)
 
