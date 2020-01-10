@@ -1,6 +1,8 @@
 # Developer Portfolio
 Please note that this a work in progress, living document, and is subject to continuous change (as is the entire repo). Apologies for any blank or under-explained areas, which will be updated as time permits.
 
+While not actively seeking a full-time developer role, I would be open to offers for mid-to-senior developer roles within Toronto. Feel free to contact me via details listed [here](https://github.com/matthewzar)<sup>sign-in required to avoid spam bots</sup>.
+
 ## Repo Overview
 This repo is an informal showcase of past works. Including everything from pet projects, to screenshots and descriptions of less public works (NDAs and IP limitations permitting).
 
