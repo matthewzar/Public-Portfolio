@@ -16,9 +16,17 @@ Compared and contrasted the applications of various existing crowd simulation te
 
 Exploration of how one might teach programming concepts by converting them into real-world metaphors. For example, variables as envelopes that can contain one piece of paper (i.e. their value for primitives, or an address for objects).
 
+A key concept from this paper was the idea of a conceptual hierarchy. For a student to *truly* understand an idea, they could have to understand all the preceding concepts:
+
+![Dependency hierarchy for beginner-level concepts.](ConceptualDependencyGraph.png "Conceptual Dependency Diagram")
+
+The reason this hierarchy was a key idea is simple: by ensuring our metaphors accurately portrayed fundamental concepts (such as Scope and Types), students would be less likely to form a misconception later.
+
 #### [Programming Yourself](Programming-Yourself/)
 
-//TODO 
+This work-in-progress suggests ideas for how programming can be used as a learning tool. For example, if you're studying physics try to program a Newtonian equation solver.
+
+The reason this works is that, to program something, you have to *really* understand it. Therefore programming gives you a set of tools to test, explore, and grow your understanding until you get it just right.
 
 ## Future Works
 
