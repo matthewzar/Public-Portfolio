@@ -72,10 +72,11 @@ Some entries are basically programming exercises from websites, and others are m
 Here are some examples of what will eventually be added here:
  - [CodeWars](https://www.codewars.com/users/Anarki) - solutions and authored Katas.
  - [Project Euler](https://projecteuler.net/) solutions.
- - Hackathon-style mini programs. Generally written fast and for fun.
+ - Hackathon-style mini programs. Generally written fast and/or for fun.
 	 - [Minesweeper](Fun-And-Games/Minesweeper/README.md)
 	 - [Checkers](Fun-And-Games/Checkers/README.md)
-	 - [Sudoku](Fun-And-Games/Sudoku-SimplifiedPython/README.md)
+	 - [Sudoku (C#)](Fun-And-Games/Sudoku-GeneratorAndSolver/README.md)
+	 - [Sudoku (Python)](Fun-And-Games/Sudoku-SimplifiedPython/README.md)
 	 - Bingo
 
 ## Large Personal Projects
