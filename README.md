@@ -91,3 +91,8 @@ This site is meant to share what I've learned about development and software eng
  - [MSc](Educational%20Books/ProgrammingMetaphors-MScThesis/) in Computer Science
  - Udacity Nano Degrees introducing [PyTorch](https://confirm.udacity.com/C324HNSJ) and [Tensorflow](https://confirm.udacity.com/4QURNATJ)
 
+### Skills in development
+
+I never stop learning. Ever. And that attitude has let me touch 15+ languages in a variety of niche applications. I'm currently learning:
+ - React.js
+ - SQL (bizzare, I know, but I havn't had much need for it until recently).
