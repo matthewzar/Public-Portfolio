@@ -1,7 +1,7 @@
 # Developer Portfolio
 Please note that this a work in progress, living document, and is subject to continuous change (as is the entire repo). Apologies for any blank or under-explained areas, which will be updated as time permits.
 
-While not actively seeking a full-time developer role, I would be open to offers for mid-to-senior developer roles within Toronto. Feel free to contact me via details listed [here](https://github.com/matthewzar)<sup>sign-in required to avoid spam bots</sup>.
+I'm open to offers regarding mid-to-senior developer roles within Toronto. Feel free to contact me via details listed [here](https://github.com/matthewzar)<sup>sign-in required to avoid spam bots</sup>.
 
 ## Repo Overview
 This repo is an informal showcase of past works. Including everything from pet projects, to screenshots and descriptions of less public works (NDAs and IP limitations permitting).
@@ -14,10 +14,10 @@ I offer both freelance development and programming tutoring. Because I can't alw
 
 Some client reviews:
  > Absolutely brilliant coder.. very insightful... Extremely rapid and high quality implementation of the task. Excellent communication and provided excellent documentation as well. 
- 
+  
+ > Above and beyond! Matthew is very enthusiastic about his work and has brought some much appreciated insight to a relatively complex project.
+
  > Perfect as always.
- 
- > Matthew did a great job as always. Highly recommended. Will continue to work with him.
 
 #### [Chegg](https://www.chegg.com/tutors/online-tutors/Matthew-F-05446/)
 Chegg offers a variety of academic services. I personally contribute via both live video tutoring, and written lessons. In my experience, being able to teach a live lesson (at a moment's notice) requires both an advanced level of topical expertise, and the ability to communicate **clearly** - poor communication leads to confused students.
@@ -32,10 +32,14 @@ Chegg offers a variety of academic services. I personally contribute via both li
 ## Creating Educational Content
 Most of the education-focused material shown here will eventually be available to purchase at [Code Commissions](https://codecommissions.com/). Samples such as screenshots or intro videos, will be listed here - while the full product will linked to externally. 
 
+![alt text](SkillSharePromoCompilation.png "SkillShare course promos")
+
 These are videos/demos/courses/eBooks I've made that teach programming, and other developer skills, at various levels. Some are free and available to all, others are listed commercially:
  - Code Commissions (my personal site)
 	- [Developer Skills Colleges Forget](https://codecommissions.com/p/developer-skills-colleges-forget) - an overview of 30+ skills I believe Universities don't cover enough.
  - SkillShare
+  	- [Visual Python - Functions with Turtles](https://skl.sh/2upVh49) 
+ 	- [Visual Python - Recursion with Turtles](https://skl.sh/2GGvYNm) 
  	- [Python Mini-Projects - a Maths Quiz Game](https://skl.sh/2vgU7Y7)
  	- [Python Essentials: Password Generator](https://skl.sh/2TDL5eL)
 	- [Python Essentials: Card Deck Class in 3 Steps](https://skl.sh/2OWSFjM) 
@@ -93,6 +97,6 @@ This site is meant to share what I've learned about development and software eng
 
 ### Skills in development
 
-I never stop learning. Ever. And that attitude has let me touch 15+ languages in a variety of niche applications. I'm currently learning:
+I never stop learning. Ever. And that attitude has let me touch 18+ languages in a variety of niche applications. I'm currently learning:
  - React.js
  - SQL (bizzare, I know, but I havn't had much need for it until recently).
